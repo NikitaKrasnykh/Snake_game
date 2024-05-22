@@ -1,0 +1,74 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: min-content;
+    margin: 10% auto 10%;
+    align-items: center;
+    position: relative;
+}
+
+.container {
+    display: grid;
+    width: 400px;
+    height: 400px;
+    grid-template-columns: repeat(10, 40px);
+    grid-template-rows: repeat(10, 40px);
+    border: 1px solid black;
+}
+
+.current_score {
+    max-width: fit-content;
+    padding: 0;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.max_score {
+    max-width: fit-content;
+    padding: 20px 0;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.cell {
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+}
+
+.snake {
+    background-color: cadetblue;
+}
+
+.apple {
+    background-color: chocolate;
+}
+
+.modal_hidden {
+    display: none;
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 16%;
+    background-color: bisque;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 0px;
+}
+
+.modal_displayed {
+    display: block;
+}
+
+.restart {
+    background-color: black;
+    color: white;
+    width: 200px;
+    height: 100px;
+    margin-top: 40%;
+}
+
+.restart:hover {
+    cursor: pointer;
+}
